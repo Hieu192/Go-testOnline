@@ -74,7 +74,7 @@ cd GO-intern
 
 1. Backend (NestJS)
 ```bash
-Cấu hình DB: backend/src/config/typeorm.config.ts hoặc .env
+Cấu hình lại DB: backend/src/config/typeorm.config.ts hoặc .env
 cd backend
 npm install 
 npm run seed (import dữ liệu vào database )
@@ -89,7 +89,7 @@ npm run dev
 ```
 
 ## 🧪 Link Demo ứng dụng 
-
+👉 [Xem video trên Google Drive](https://drive.google.com/file/d/YourFileID/view)
 
 ## 📌 API
 
