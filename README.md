@@ -89,7 +89,7 @@ npm run dev
 ```
 
 ## 🧪 Link Demo ứng dụng 
-👉 [Xem video trên Google Drive](https://drive.google.com/file/d/YourFileID/view)
+👉 [Xem video trên Google Drive](https://drive.google.com/drive/folders/18jNyeIwcKc7w5CsELMbqYBI0VYRa7VUT?usp=drive_link)
 
 ## 📌 API
 
