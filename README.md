@@ -50,7 +50,7 @@ GO-intern/
 │
 ├── docker-compose.yml      # Docker Compose file
 └── README.md
-
+```
 
 🐳 Chạy toàn bộ hệ thống bằng Docker
 
@@ -67,20 +67,26 @@ docker-compose up --build
 
 
 ⚙️ Chạy thủ công (local)
-- git clone https://github.com/your-username/GO-intern.git
-- cd GO-intern
+```bash
+git clone https://github.com/your-username/GO-intern.git
+cd GO-intern
+```
 
 1. Backend (NestJS)
-- Cấu hình DB: backend/src/config/typeorm.config.ts hoặc .env
-- cd backend
-- npm install 
-- npm run seed (import dữ liệu vào database )
-- npm run dev 
+```bash
+Cấu hình DB: backend/src/config/typeorm.config.ts hoặc .env
+cd backend
+npm install 
+npm run seed (import dữ liệu vào database )
+npm run dev 
+```
 
 2. Frontend (React + Vite)
-- cd frontend
-- npm install
-- npm run dev
+```bash
+cd frontend
+npm install
+npm run dev
+```
 
 🧪 Link Demo ứng dụng 
 
