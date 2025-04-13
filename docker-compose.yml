@@ -1,0 +1,39 @@
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_NAME}
+    ports:
+      - "3308:3306"
+
+  backend:
+    build: ./backend
+    container_name: backend
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    working_dir: /app
+    command: sh -c "npx wait-for-it mysql:3306 --timeout=60 --strict; npm run seed && npm run start:prod"
+    # environment:
+    #   DATABASE_HOST: mysql
+    #   DATABASE_PORT: ${MYSQL_PORT}
+    #   DATABASE_PASSWORD: ${MYSQL_PASSWORD}
+    #   DATABASE_NAME: ${MYSQL_PASSWORD}
+    depends_on:
+      - mysql
+
+  frontend:
+    build: ./frontend
+    container_name: frontend
+    restart: unless-stopped
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
+
+volumes:
+  mysql_data:

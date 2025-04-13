@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  background-color: #F8F8F8;
+  font-family: "Quicksand", sans-serif;
+}
+
+label {
+  margin: 0;
+  color: #FFC107;
+}
