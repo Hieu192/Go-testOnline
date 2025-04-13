@@ -54,13 +54,13 @@ GO-intern/
 
 ## 🐳 Chạy toàn bộ hệ thống bằng Docker
 
-# Clone project
+Clone project
 ```bash
 git clone https://github.com/your-username/GO-intern.git
 cd GO-intern
 ```
 
-# Chạy ứng dụng
+Chạy ứng dụng
 ```bash
 docker-compose up --build
 ```
@@ -72,7 +72,7 @@ git clone https://github.com/your-username/GO-intern.git
 cd GO-intern
 ```
 
-# 1. Backend (NestJS)
+1. Backend (NestJS)
 ```bash
 Cấu hình DB: backend/src/config/typeorm.config.ts hoặc .env
 cd backend
@@ -81,7 +81,7 @@ npm run seed (import dữ liệu vào database )
 npm run dev 
 ```
 
-# 2. Frontend (React + Vite)
+2. Frontend (React + Vite)
 ```bash
 cd frontend
 npm install
