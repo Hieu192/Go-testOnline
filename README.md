@@ -55,11 +55,15 @@ GO-intern/
 🐳 Chạy toàn bộ hệ thống bằng Docker
 
 # Clone project
+```bash
 git clone https://github.com/your-username/GO-intern.git
 cd GO-intern
+```
 
 # Chạy ứng dụng
+```bash
 docker-compose up --build
+```
 
 
 ⚙️ Chạy thủ công (local)
